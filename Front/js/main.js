@@ -2,7 +2,7 @@ let lastResult = null; // Variable para almacenar el último resultado
 
 function appendToDisplay(value) {
     const display = document.getElementById('resultado');
-    
+    display.value.includes("Error") ? display.value ="" : display
     // Evitar múltiples puntos decimales en un mismo número
     if (value === '.' && display.value.includes('.')) {
         return; // No hacer nada si ya hay un punto decimal
