@@ -8,28 +8,32 @@
     <title>Super Calculadora</title>
 </head>
 <body>
-    <div id="calculadora">
-        <input type="text" id="resultado" readonly>
-        <div class="botones">
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="deleteLast()">DEL</button>
-            <button onclick="clearDisplay()">AC</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('*')">*</button>
-            <button onclick="appendToDisplay('/')">/</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('+')">+</button>
-            <button onclick="appendToDisplay('-')">-</button>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="useLastResult()">ANS</button>
-            <button onclick="calculate()">=</button>
+    <div id="contenedor">
+        <div id="pantalla">
+            <input type="text" id="resultado" readonly>
+        </div>
+        <div id="calculadora">
+            <div class="botones">
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button class="eliminador" onclick="deleteLast()">DEL</button>
+                <button class="eliminador" onclick="clearDisplay()">AC</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button class="operador" onclick="appendToDisplay('*')">*</button>
+                <button class="operador" onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button class="operador" onclick="appendToDisplay('+')">+</button>
+                <button class="operador" onclick="appendToDisplay('-')">-</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="useLastResult()">ANS</button>
+                <button class="igual" onclick="calculate()">=</button>
+            </div>
         </div>
     </div>
 </body>
