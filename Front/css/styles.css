@@ -4,21 +4,25 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
+    font-family: 'Open Sans';
 }
 
 #calculadora {
-    background-color: #fff;
+    width: 400px;
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #resultado {
-    width: 100%;
-    height: 40px;
-    font-size: 24px;
+    height: 100px;
+    width: 420px;
+    background-color: #000;
+    color: #fff;
+    font-size: 3rem;
     text-align: right;
-    margin-bottom: 20px; /* Agregar margen inferior */
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .botones {
@@ -28,7 +32,27 @@ body {
 }
 
 button {
+    background-color: #c9c6c6;
+    border: none;
+    font-size: 1.5rem;
     padding: 20px;
-    font-size: 18px;
+    border-radius: 5px;
+    width: 100%;   /* Hace que los botones tengan el mismo ancho */
+    height: 60px;
     cursor: pointer;
+    display: inline-block;
+}
+
+.eliminador {
+    background-color: #e9890ce0;
+}
+
+.operador {
+    background-color: #c9c6c69f;
+    color: #fff;
+}
+
+.igual {
+    background-color: #eb242ee0;
+    color: #fff;
 }
